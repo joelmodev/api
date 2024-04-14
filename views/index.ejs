@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity - Armazenamento Seguro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <script src="https://kit.fontawesome.com/f8636f0dcf.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="dark-theme">
+    <nav>
+        <div><img onclick="location.replace('/')" src="/img/logo-dark.png" class="brand-img dark" width="100px"></div>
+        <div class="menu-button" onclick="menu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="list-menu" id="listmenu">
+          <ul id="menu-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <ul  id="menu-btn">
+            <li><a href="/login" style="margin-right: 10px;">Entrar</a></li>
+            <li><a class="btn btn-primario" href="/register">Cadastre-se</a></li>
+        </ul>
+        </div>
+    </nav>
+   <!--
+    THEME BTN
+   -->
+    <div id="temabtn" onclick="mudarTema()"><a  href="javascript:void(0)"><i id="a" class="fa-solid fa-moon"></i></a></div> 
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 lh-1 mb-3">Lorem ipsum dolor sit</h1>
+          <p class="col-lg-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, arcu ut elementum aliquam, mauris ligula condimentum nunc, sed lobortis turpis orci ac eros.</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" width="400px">
+        </div>
+      </div>
+    </div>
+    <hr class="border opacity-10">
+    <div id="about">
+      <div class="container px-4 py-5" id="featured-3">
+        
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="col-md-10 mx-auto col-lg-9">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" width="400px">
+            </div>
+          </div>
+          <div class="col">
+            <h2 class="pb-2">Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci lectus, venenatis eget massa malesuada, gravida venenatis arcu. Nam aliquet lorem nec dui efficitur, a ultrices tellus finibus. Donec leo ipsum, faucibus eu ligula at, venenatis viverra enim. Pellentesque a efficitur lorem, quis ornare arcu.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr class="border opacity-10">
+    <div class="container px-4 py-5" id="services">
+      <h2 class="pb-2 border-bottom">Serviços</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <i class="fa-solid fa-magnifying-glass a"></i>
+          </div>
+          <h3 class="fs-2 ">Featured title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, arcu ut elementum aliquam, mauris ligula condimentum nunc, sed lobortis turpis orci ac eros.</p>
+          
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <i class="fa-solid fa-magnifying-glass a"></i>
+          </div>
+          <h3 class="fs-2 ">Featured title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, arcu ut elementum aliquam, mauris ligula condimentum nunc, sed lobortis turpis orci ac eros.</p>
+          
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <i class="fa-solid fa-magnifying-glass a"></i>
+          </div>
+          <h3 class="fs-2">Featured title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, arcu ut elementum aliquam, mauris ligula condimentum nunc, sed lobortis turpis orci ac eros.</p>
+          
+        </div>
+      </div>
+    </div>
+    <hr class="border opacity-10">
+    <div class="container" id="contact">
+      <h2 class="pb-2 border-bottom">Contato</h2>
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nome</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primario">Enviar</button>
+          </form>
+        </div>
+        <div class="col">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.0948329597243!2d-47.62427208949104!3d-22.22008078465695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7ef4875514467%3A0x7461ee040b78b8c3!2sAv.%20Dois%2C%20184%2C%20Corumbata%C3%AD%20-%20SP%2C%2013540-000!5e0!3m2!1spt-BR!2sbr!4v1704307798505!5m2!1spt-BR!2sbr" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="border opacity-10">
+      <div class="text-center ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-bottom: 10px; margin-top: 10px;" >
+          <path opacity="0.2" d="M42 18L27.2719 28.5H20.7281L6 18L24 6L42 18Z" fill="#fbaf29"></path>
+          <path d="M42.8325 16.7512L24.8325 4.75125C24.586 4.58679 24.2963 4.49902 24 4.49902C23.7037 4.49902 23.414 4.58679 23.1675 4.75125L5.1675 16.7512C4.96202 16.8883 4.79358 17.0741 4.67713 17.2919C4.56068 17.5098 4.49984 17.753 4.5 18V37.5C4.5 38.2956 4.81607 39.0587 5.37868 39.6213C5.94129 40.1839 6.70435 40.5 7.5 40.5H40.5C41.2957 40.5 42.0587 40.1839 42.6213 39.6213C43.1839 39.0587 43.5 38.2956 43.5 37.5V18C43.5002 17.753 43.4393 17.5098 43.3229 17.2919C43.2064 17.0741 43.038 16.8883 42.8325 16.7512ZM18.135 28.5L7.5 36V20.9119L18.135 28.5ZM21.2044 30H26.7956L37.4137 37.5H10.5862L21.2044 30ZM29.865 28.5L40.5 20.9119V36L29.865 28.5ZM24 7.80187L39.3581 18.0412L26.7956 27H21.2081L8.64563 18.0412L24 7.80187Z" fill="#fbaf29"></path>
+       </svg>
+        <div class="titulo">
+          <h3>Cadastre-se em nossa newsletter</h3>
+        </div>
+        <form action="" class="d-flex justify-content-center">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">E-mail</label>
+            </div>
+            <div class="col-auto">
+              <input type="email" id="inputPassword6" class="form-control">
+            </div>
+            <div class="col-auto"><a type="submit" class="btn-primario">Cadastrar</a></div>
+          </div>
+
+          
+        </form>
+      </div>
+      
+    <div class="container">
+
+    </div>
+    <hr class="border opacity-10">
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <ul class="nav col-md-4 justify-content-start"></ul>
+    <!--A-->
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <div><img onclick="location.replace('index.html')" src="/img/logo-dark.png" class="brand-img dark" width="100px"></div>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end"></ul>
+      </footer>
+    </div>
+  </body>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/changeTheme.js"></script>
+  </html>

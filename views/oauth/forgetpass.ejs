@@ -1,0 +1,39 @@
+<%- include ('modules/head.ejs') %>
+<% if(type == 'none'){ %>
+<div class="d-flex align-items-center py-4">
+<main class="form-login m-auto" style="width: 20rem;">
+    <form id="loginForm" onsubmit="sendMail()" >
+      
+      <h3 class="titulo">Redefina sua senha</h3>
+      <div class="" id="alert"></div>
+  
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" id="email" class="form-control mb-3" required>
+
+  
+      <button class="btn btn-primario w-100 py-2" type="submit">Redefinir</button>
+    </form>
+  </main>
+</div>
+<% }else{ %>
+  <div class="d-flex align-items-center py-4">
+    <main class="form-login m-auto" style="width: 20rem;">
+        <form id="loginForm" onsubmit="changePassword()" >
+          
+          <h3 class="titulo">Redefina sua senha</h3>
+          <div class="" id="alert1"></div>
+          <input type="hidden" value="<%= token %>" id="token">
+          <label for="newPassword" class="form-label">Nova Senha</label>
+          <input type="password" id="newPassword" class="form-control mb-3" required>
+          <label for="passwordConfirm" class="form-label">Confirmação da Senha</label>
+          <input type="password" id="passwordConfirm" class="form-control mb-3" required>
+    
+      
+          <button class="btn btn-primario w-100 py-2" type="submit">Redefinir</button>
+        </form>
+      </main>
+    </div>
+<% } %>
+<script src="/js/oauth/login.js"></script>
+
+<%- include ('modules/footer.ejs') %>

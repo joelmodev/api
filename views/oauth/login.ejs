@@ -1,0 +1,54 @@
+<%- include ('modules/head.ejs') %>
+
+<div class="d-flex align-items-center py-4">
+<main class="form-login m-auto" style="width: 20rem;">
+    <form id="loginForm" onsubmit="login()" >
+      
+      <h3 class="titulo">Entre na sua conta</h3>
+      <div class="" id="alert"></div>
+  
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" id="email" class="form-control mb-3" required>
+      <label for="password" class="form-label">Senha <a href="/resetpass" style="margin-left: 9.5rem;  color: #fbaf29;">Esqueci a senha</a></label>
+      <input type="password" id="password" class="form-control mb-3" required >
+
+  
+      <button class="btn btn-primario w-100 py-2" type="submit">Entrar</button>
+      <div class="form-text">
+        <p style="font-size: 15px;">Não tem uma conta? <a href="/register">Cadastre-se</a></p>
+      </div>
+    </form>
+  </main>
+</div>
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event){
+        event.preventDefault()
+    });
+    function login(){
+        const options = {
+        method: "POST",
+        body: JSON.stringify({
+          email: document.getElementById("email").value,
+          password: document.getElementById("password").value,
+        }),
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8",
+        },
+      };
+
+      fetch("/api/oauth/login", options)
+      .then((response) => response.json())
+      .then((response) => {
+        if(response.status == 'success'){
+          window.location.replace('/dash')
+        }else{
+          document.getElementById('alert').innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" id="">
+            <strong><i class="fa-solid fa-triangle-exclamation"></i></strong> Ops! Algo deu errado, parece que sua senha ou email estão incorretos!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>      
+          </div>`
+        }
+      })
+    }
+</script>
+
+<%- include ('modules/footer.ejs') %>

@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+/*
+/  THEME CONFIGURATIONS
+*/
+.dark-theme {
+  a, p, #a, .menu-button, i, label {
+    color: #f8f8f8;
+  }
+  input, input:focus, textarea, textarea:focus{
+    background-color: #2e3134;
+  }
+  .responsive{
+    background-color: #414446;
+  }
+  .form-control{
+    color: #fff;
+  }
+}
+.dark-theme{
+  background-color: #2e3134;
+}
+.white-theme{
+  a, p, i, .menu-button {
+    color: #2e3134;
+  }
+  .responsive{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+  .fa-linkedin, .fa-facebook, .fa-instagram, .fa-spotify{
+    color: #fff;
+  }
+  .fa-linkedin:hover, .fa-facebook:hover, .fa-instagram:hover, .fa-spotify:hover{
+    color: #fbaf29;
+  }
+  .form-control{
+    color: #000;
+  }
+}
+.white-theme{
+  background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, a, .titulo, .btn{
+  font-family: Coming Soon;
+  color: #fbaf29;
+}
+p{
+  font-family: Roboto; 
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #fbaf29;
+}
+
+.container{
+  margin: 20px;
+}
+
+
+/*
+*
+*  SCROLL BAR STYLES
+*
+*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+/*
+*
+*  BTNT STYLES
+*
+*/
+
+.btn-primario:hover{
+  background-color: #e29d27;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-primario{
+  background-color: #fbaf29;
+  border: none;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.btn-primario:focus{
+  background-color: #fbaf29;
+  color: #2e3134;
+}
+
+
+/*
+*
+*  NAVBAR STYLES
+*
+*/
+nav{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.8px);
+  -webkit-backdrop-filter: blur(13.8px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+/*MENU BUTTON*/
+.menu-button{
+  display: none;
+}
+.menu-button:hover{
+  cursor: pointer;
+}
+/*NAV ITENS*/
+nav{
+  div, ul, li, .nav-brand{
+    display: inline;
+  }
+  ul{
+    list-style: none;
+  }
+}
+#menu-links{
+  position: absolute;
+  left: 30%;
+}
+#menu-links li{
+  margin-right: 10px;
+}
+#menu-btn{
+  float: right;
+}
+.list-menu{
+  display: inline;
+  margin: 2.5px;
+}
+.list-menu a{
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+  nav{
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.8px);
+    -webkit-backdrop-filter: blur(13.8px);
+    position: static;
+  }
+  .list-menu{
+    display: none;
+  }
+  .menu-button{
+    display: inline;
+    float: right;
+    margin: 2.5px;
+  }
+  .responsive {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding-bottom: 5px;
+  }
+  .responsive{
+    #menu-links{
+      position: static;
+    }
+    #menu-btn{
+      float: none;
+      display: inline;
+    }
+    #menu-btn{
+      li{
+        display: inline;
+      }
+    }
+  }
+  
+  .responsive li, .responsive ul{
+    display: block;
+    margin-top: 2.5px;
+  } 
+  
+}
+#temabtn{
+  position: fixed;
+  top: 90%;
+  right: 25px;
+  background-color: #fbaf29;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#temabtn:hover{
+  background-color: #e29d27;
+  cursor: pointer;
+}
+#temabtn a{
+  color: #fff;
+}
+
+
+.feature-icon{
+  background-color: #fbaf29;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #fbaf29;
+  box-shadow: 0 0 0 0.2rem rgba(251, 175, 41, 0.25);
+} 
+
+
+.content {
+  border-radius: 30px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.content h1{
+  margin-top: 20px;
+}
+.content .form-control{
+  width: 10%;
+}
+
+#loginForm, #registerForm{
+  margin-top: 20%;
+}

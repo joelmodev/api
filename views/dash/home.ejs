@@ -1,0 +1,62 @@
+<%- include ('modules/head.ejs') %>
+<div class="main-content" style="margin-left: 280px;">
+
+<h4><%= saudacao %>, <%= name %>.</h4>
+<div class="row">
+  <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; width: 30%; ">
+    <h6>Amazenamento Ocupado - x%</h6>
+    <div class="text" style="display: inline;">0.00 MB/<span style="color: rgb(0, 211, 0);">10 GB</span></div>
+    <div class="text"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 0%"></div>
+    </div>
+  </div>
+  </div>
+    <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; width: 70%; ">
+      <h6>Dados da Sessão</h6>
+      <div class="text" style="display: inline;">Email: <%= email %></div>
+      <div class="text" style="margin-top: -5px;">ID: <%= user_id %></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; width: 100%; ">
+      <h6>Meus arquivos</h6>
+      <ul style="list-style: none;">
+        <li><i class="fa-solid fa-file-lines"></i> A <a href="" style="float: right; margin-right: 10px;"><i class="fa-solid fa-trash-can text-danger"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--
+  <div class="row">
+    
+    <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; max-width: 20rem; ">
+      <h6>Mudar senha</h6>
+      <div>Preencha os campos abaixo:</div>
+      <div id="alert"></div>
+      <form action="" id="home-form" onsubmit="changepass();">
+      <div class="text" style="margin: 10px 0;"><input type="password" id="password" class="form-control" placeholder="Digite a senha"></div>
+      <button class="btn-primario" type="submit"><i class="fa-solid fa-arrows-rotate"></i> Alterar</button>
+    </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; max-width: 20rem; ">
+      <button onclick="window.location.replace('/api/oauth/logout')" class="btn-primario" style="background-color: rgb(255, 33, 33);"><i class="fa-solid fa-right-from-bracket"></i> Sair</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="background-color: #414446; margin-left: 10px; padding: 10px; border-radius: 5px; max-width: 20rem; ">
+      <form action="/api/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" class="form-control" />
+        <button type="submit" class="btn-primario" style="margin-top: 10px;"><i class="fa-solid fa-arrow-up-from-bracket"></i> Upload</button>
+    </form>
+    </div>
+    -->
+  </div>
+  
+  <script src="/js/oauth/changepass.js"></script>
+  
+</div>
+    
+
+<%- include ('modules/footer.ejs') %>
+
